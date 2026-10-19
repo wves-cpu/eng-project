@@ -32,3 +32,8 @@
 .closing-qr-copy>span:last-child{color:#d2d0c7;font-size:6px;letter-spacing:.11em;font-weight:600}
 .closing-qr-arrow{align-self:flex-start;color:#ddc3ad;font-size:15px}
 @media(max-width:700px){.closing-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'brand brand' 'qr cta';gap:10px 12px;margin:0 0 22px}.closing-brand{grid-area:brand}.closing-qr{grid-area:qr;width:min(210px,56vw);gap:8px;padding:7px;border-radius:13px}.closing-qr>img{width:52px;height:52px;padding:3px}.closing-qr-copy{gap:4px}.closing-qr-copy .eyebrow{font-size:6px}.closing-qr-copy strong{font-size:13px}.closing-qr-copy>span:last-child{font-size:5px}.closing-qr-arrow{font-size:12px}.closing-bottom>.button{grid-area:cta;justify-self:end;align-self:center;white-space:nowrap}}
+
+/* Keep the active state on its small dot, not on the full hit target. */
+.dots button.active{background:transparent;transform:none}
+.dots button.active:after{width:8px;height:4px;border-radius:999px}
+@media(max-width:700px){.dots button.active:after{width:7px;height:4px}}
