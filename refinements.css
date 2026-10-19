@@ -20,3 +20,15 @@
 .dots button:after{width:4px;height:4px}
 .dots button.active:after{width:7px;height:4px}
 @media(max-width:700px){.dots button{width:12px;height:22px}.dots button:after{width:4px;height:4px}.dots button.active:after{width:7px;height:4px}}
+
+/* Share the live presentation from its closing slide. */
+.closing-qr{display:flex;align-items:center;gap:12px;width:248px;padding:9px 12px 9px 9px;border:1px solid #f2efe755;border-radius:16px;background:rgba(28,30,27,.56);color:#f2efe7;text-decoration:none;backdrop-filter:blur(12px);box-shadow:0 10px 32px #0002;transition:transform .3s var(--ease),background .3s var(--ease),border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.closing-qr:hover{transform:translateY(-3px);background:rgba(28,30,27,.78);border-color:#e1c2a5a8;box-shadow:0 14px 34px #0003}
+.closing-qr:focus-visible{outline:2px solid #e1c2a5;outline-offset:4px}
+.closing-qr>img{display:block;width:66px;height:66px;padding:4px;border-radius:9px;background:#fff;image-rendering:pixelated}
+.closing-qr-copy{display:flex;flex:1;flex-direction:column;gap:5px}
+.closing-qr-copy .eyebrow{color:#cbb8a5;font-size:7px;letter-spacing:.13em}
+.closing-qr-copy strong{font:500 15px var(--serif);letter-spacing:.01em}
+.closing-qr-copy>span:last-child{color:#d2d0c7;font-size:6px;letter-spacing:.11em;font-weight:600}
+.closing-qr-arrow{align-self:flex-start;color:#ddc3ad;font-size:15px}
+@media(max-width:700px){.closing-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'brand brand' 'qr cta';gap:10px 12px;margin:0 0 22px}.closing-brand{grid-area:brand}.closing-qr{grid-area:qr;width:min(210px,56vw);gap:8px;padding:7px;border-radius:13px}.closing-qr>img{width:52px;height:52px;padding:3px}.closing-qr-copy{gap:4px}.closing-qr-copy .eyebrow{font-size:6px}.closing-qr-copy strong{font-size:13px}.closing-qr-copy>span:last-child{font-size:5px}.closing-qr-arrow{font-size:12px}.closing-bottom>.button{grid-area:cta;justify-self:end;align-self:center;white-space:nowrap}}
