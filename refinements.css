@@ -14,3 +14,9 @@
 .room-card{background:var(--paper);box-shadow:0 8px 30px #20211e0a}.room-card:not(.open){opacity:1;transform:none}.room strong{font-size:10px;color:#252723}.room span{font-size:8px;color:#55564f}.cursor.big{width:24px;height:24px;opacity:.3;background:rgba(166,109,77,.45)}.cursor-label{display:none!important}
 .cursor.big{width:22px;height:22px;opacity:.85;background:transparent;border:1px solid var(--clay);mix-blend-mode:normal}
 @media(max-width:700px){.tour-title{top:14%;left:-2vw;width:94%;padding:12px 15px;background:linear-gradient(90deg,rgba(24,27,24,.76),rgba(24,27,24,.22),transparent);border-radius:8px}.tour-title .eyebrow,.tour-title .display{color:#f2efe7;text-shadow:0 1px 14px #0005}.tour-title .display{font-size:clamp(44px,11vw,62px)}.tour-modes button{font-size:7px;padding:10px 11px}.tour-controls{bottom:30px}}
+/* Compact slide indicators: keep generous click targets, reduce the visible pill. */
+.dots{gap:0}
+.dots button{width:15px;height:24px}
+.dots button:after{width:4px;height:4px}
+.dots button.active:after{width:7px;height:4px}
+@media(max-width:700px){.dots button{width:12px;height:22px}.dots button:after{width:4px;height:4px}.dots button.active:after{width:7px;height:4px}}
